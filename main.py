@@ -2,6 +2,9 @@
 #import
 
 
+import picture #import picture.py
+
+import math
 import winsound
 import ctypes
 from colorama import *
@@ -34,6 +37,7 @@ Its simple calculate !
 
 time.sleep(1)
 print(Fore.YELLOW +"App launching processing . . .")
+print(picture.calculator_ascii)
 time.sleep(3)
 print(Fore.RED +"App runing")
 time.sleep(1)
@@ -59,7 +63,7 @@ def cal():
     cleaner_consol()
     #Variable
     
-    awnser_1 = str((Fore.LIGHTGREEN_EX +"\n" "Awnser : "))
+    awnser_1 = str((Fore.LIGHTGREEN_EX +"\n" "Awnser : ")) #It is used to beautify the code
 
     
     
@@ -67,13 +71,22 @@ def cal():
     try:
             #input
             a = float(input(color_reset+F"Enter num 1 "+dot+color_reset ))
-            b = float(input(F"Enter num 2 "+dot+color_reset ))
+             #input mathematical operations
+            c = input(Fore.RESET +"What mathematical operations should be performed? (sqrt,+,-,/,*,**,//) "+dot+color_reset)
+            if c in ["sqrt"]:#if user type sqrt dont get b value and do it operation
+                a = float(a)
+                awnser = math.sqrt(a)
+                print(f'{awnser_1}{awnser}')
+
+            else: #if not match sqrt get b input form user
+                b = float(input(F"Enter num 2 "+dot+color_reset ))
+                b = str(b) #change type
            
            #change type
             a = str(a)
-            b = str(b)
-          #input
-            c = input(Fore.RESET +"What mathematical operations should be performed? (+,-,/,*,**,//) "+dot+color_reset)
+            
+          
+            
 
      #1anti-bug
             
@@ -90,6 +103,11 @@ def cal():
         if c in ['+', '-', '*', '**', '/', '//']:
             awnser = eval(a + c + b) #eval mathematical operations 
             print(f'{awnser_1}{awnser}')
+
+        elif c in ["sqrt"]: #its for dont bug else system
+            again()  
+
+           
             #anti-bug
         else :
             print(Fore.RED +"Undefined mathematical operations")   
@@ -124,12 +142,15 @@ def again():
 #fake-end-time           
             print("Close now")
             time.sleep(1)
-        t = Timer(5.0, end)#after 5 s end app
+        t = Timer(5.0, exit)#after 5 s end app
         t.start() #start timer  
+        
 #anti-bug     
     else :
+        print(Fore.LIGHTRED_EX +"incorrect value"+color_reset)
         again()
-#call main code        
+        
+#call main code . at the first lunch app this code work   
 cal()    
     
     
