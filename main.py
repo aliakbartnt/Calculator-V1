@@ -2,6 +2,7 @@
 #import
 
 
+from pyparsing import C
 import picture #import picture.py
 
 import math
@@ -13,7 +14,8 @@ import time
 from threading import Timer
 
 
-
+#variuble
+#num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 #setting
@@ -24,11 +26,11 @@ init()
 #coppyright
 
 print(Fore.LIGHTCYAN_EX +'''
-Welcome to calculater !
+Welcome to calculator !
 
 Create by aliakbartnt !
 
-Its simple calculate !
+It's simple calculator !
 
 ''')
 
@@ -54,15 +56,20 @@ cleaner_consol()
 #Variable
 
 
+
 dot = (Fore.LIGHTGREEN_EX +": ")
 color_reset = (Fore.RESET +"")
 
 #main source
     
 def cal():
+    
     cleaner_consol()
     #Variable
-    
+    check = 0 #reset value
+    a = None #reset value
+    b = None #reset value
+    c = None #reset value    
     awnser_1 = str((Fore.LIGHTGREEN_EX +"\n" "Awnser : ")) #It is used to beautify the code
 
     
@@ -77,11 +84,13 @@ def cal():
                 a = float(a)
                 awnser = math.sqrt(a)
                 print(f'{awnser_1}{awnser}')
+                check = 1
 
             else: #if not match sqrt get b input form user
+                b = None
                 b = float(input(F"Enter num 2 "+dot+color_reset ))
                 b = str(b) #change type
-           
+                a = str(a) #change type
            #change type
             a = str(a)
             
@@ -92,37 +101,49 @@ def cal():
             
     except:
         winsound.MessageBeep(winsound.MB_ICONHAND)#sound
-        print(Fore.RED +"Please enter number"+color_reset)
+        print(Fore.RED +"Please enter number"+color_reset) #consol message
         #message-box
         ctypes.windll.user32.MessageBoxW(0, "Please enter number", "Not Correct", 0 | 0x30)
-        cal()
+    #    cal()
+    
     
     #2anti-bug
     try:
         #check for c value true
         if c in ['+', '-', '*', '**', '/', '//']:
+            
             awnser = eval(a + c + b) #eval mathematical operations 
             print(f'{awnser_1}{awnser}')
+            
+            
+             
 
-        elif c in ["sqrt"]: #its for dont bug else system
-            again()  
+        elif c in ["sqrt", None]: #its for dont bug else system
+            c = '' #just for else work  
 
            
             #anti-bug
         else :
-            print(Fore.RED +"Undefined mathematical operations")   
-
+            print(Fore.RED +"Undefined mathematical operations")#consol message
+              
+        z = 'T'       
+        
     #2anti-bug        
     except: 
-        print(Fore.RED +"Please enter number"+color_reset)#invalid number
+        print(Fore.RED +"Please enter number!"+color_reset)#consol message invalid number
         winsound.MessageBeep(winsound.MB_ICONHAND)#sound
+        z = ""
         #message-box
-        ctypes.windll.user32.MessageBoxW(0, "Please enter number", "Not Correct", 0 | 0x30)
-        cal()#aggain run main code
-    
-        
+        ctypes.windll.user32.MessageBoxW(0, "Please enter number!", "Not Correct", 0 | 0x30)
+        cal()#again run main code
+    if z == 'T' :
+                check = 1
+                z = ''
+
+    if check == 1 : #check awnser code run       
     #if main code end ask user relaunch
-    again()   
+        again()
+        check = 0 #reset value   
 
 
 
@@ -130,6 +151,7 @@ def cal():
 
 
 def again():
+    rep = None  #reset value 
     rep = str(input(Fore.LIGHTRED_EX +"\n""Relaunch calculater ? y or n "+dot+color_reset))#user awnser input
     print(Fore.RESET +"") #for color reset with awnser user
     if rep == "y" :   #check user awnser
@@ -142,6 +164,8 @@ def again():
 #fake-end-time           
             print("Close now")
             time.sleep(1)
+            exit()
+            
         t = Timer(5.0, end)#after 5 s end app
         t.start() #start timer  
         
@@ -149,8 +173,10 @@ def again():
     else :
         print(Fore.LIGHTRED_EX +"incorrect value"+color_reset)
         again()
-        
+m = 1         
 #call main code . at the first lunch app this code work   
-cal()    
-    
+if m == 1:
+    cal()
+    m = 0#reset value    
+   
     
