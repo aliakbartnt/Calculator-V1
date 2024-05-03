@@ -142,7 +142,7 @@ def again():
 #fake-end-time           
             print("Close now")
             time.sleep(1)
-        t = Timer(5.0, exit)#after 5 s end app
+        t = Timer(5.0, end)#after 5 s end app
         t.start() #start timer  
         
 #anti-bug     
