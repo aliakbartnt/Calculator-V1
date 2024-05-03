@@ -7,7 +7,7 @@ my first app with pyhthon
 this source good for train and learn python
 
 
-## Welcome message and calculate picture
+## Welcome message and calculator picture
 ![Welcome message and calculate picture](/images/first.png)
 ## input number
 ![input number](/images/input1.png)
