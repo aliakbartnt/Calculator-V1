@@ -8,16 +8,16 @@ this source good for train and learn python
 
 
 
-![Welcome message and calculate picture](/images/first.png
+![Welcome message and calculate picture](/images/first.png)
 
-![input number](/images/input.png
+![input number](/images/input.png)
 
-![invalid input not avaliable](/images/num-error.png
+![invalid input not avaliable](/images/num-error.png)
 
-![mathematical operations work](/images/plus-work.png
+![mathematical operations work](/images/plus-work.png)
 
-![mathematical sqrt work](/images/first.png
+![mathematical sqrt work](/images/first.png)
 
-![bug not available](/images/first.png
+![bug not available](/images/first.png)
 
-![after 5s app close if you want](/images/end.png
+![after 5s app close if you want](/images/end.png)
