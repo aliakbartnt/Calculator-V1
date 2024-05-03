@@ -16,7 +16,7 @@ this source good for train and learn python
 ## mathematical operations work
 ![mathematical operations work](/images/plus-work.png)
 ## mathematical sqrt work
-![mathematical sqrt work](/images/sqrt.png)
+![mathematical sqrt work](/images/sqrt-work.png)
 ## bug not available
 ![bug not available](/images/try-bug.png)
 ## after 5s app close if you want
