@@ -14,7 +14,7 @@ or
 
 download source folder after 
 
-you can twice in main.py
+you can twice click on main.py
 ## in linux and windows : 
 launch cmd or terminal after :
 
