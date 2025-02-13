@@ -3,6 +3,7 @@
 
 
 
+
 import picture #import picture.py
 
 import math
@@ -19,11 +20,12 @@ from threading import Timer
 
 
 #setting
+if os.name == 'nt': #nt = windows
+    #terminal (cmd) color fix for windows
+    init()
 
-#color fix windows
-init()
-
-#coppyright
+#copyright 
+# !!! dont touch my copyright my app license is MIT And you must cite the source. !!!
 
 print(Fore.LIGHTCYAN_EX +'''
 Welcome to calculator !
