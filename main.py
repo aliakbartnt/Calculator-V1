@@ -2,7 +2,7 @@
 #import
 
 
-from pyparsing import C
+
 import picture #import picture.py
 
 import math
