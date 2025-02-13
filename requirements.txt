@@ -1,0 +1,7 @@
+#you neded to install this
+#pip install -r requirements.txt
+
+colorama==0.4.6
+
+
+
