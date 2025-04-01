@@ -1,7 +1,9 @@
 #you neded to install this
+#or just run main.py (its automatic install all need)
 #pip install -r requirements.txt
 
 colorama==0.4.6
+PyYAML==6.0.2
 
 
 
