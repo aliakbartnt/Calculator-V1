@@ -1,0 +1,31 @@
+# UTF-8
+#
+
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(1, 4, 0, 0),  
+    prodvers=(1, 4, 0, 0),  
+    mask=0x3f,
+    flags=0x0,
+    OS=0x4,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo(
+      [
+      StringTable(
+        '040904b0',
+        [StringStruct('CompanyName', 'Aliakbartnt'),
+        StringStruct('FileDescription', 'Calculator Application'),
+        StringStruct('FileVersion', '1.4.0.0'),
+        StringStruct('InternalName', 'Calculator'),
+        StringStruct('LegalCopyright', '© 2025 Aliakbartnt'),
+        StringStruct('OriginalFilename', 'Calculator.exe'),
+        StringStruct('ProductName', 'Calculator App'),
+        StringStruct('ProductVersion', '1.4.0.0')])
+      ]),
+    VarFileInfo([VarStruct('Translation', [1033, 1200])])
+  ]
+)

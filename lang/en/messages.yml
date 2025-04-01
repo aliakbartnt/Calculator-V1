@@ -1,0 +1,19 @@
+welcome: |
+ Welcome to calculator !
+
+ Create by aliakbartnt !
+
+ It's simple calculator !
+in-lang: Enter language 
+app-launching: App launching processing . . .
+app-running: App running
+Answer: Answer
+in-num1: Enter num 1 
+operation: What mathematical operations should be performed? (sqrt,+,-,/,*,**,//)
+in-num2: Enter num 2
+err-num: Please enter number
+err-operations: Undefined mathematical operations
+relaunch: Relaunch calculator ? y or n
+5s: 5 s to close
+0s: Close now
+invalid-value: incorrect value
