@@ -24,6 +24,8 @@ if you download source extract folder
 
 cd address/Calculator-V1/ 
 
+just open main.py its autmatic download everything 
+or
 pip install -r requirments.txt
 
 py main.py    or python3 main.py
