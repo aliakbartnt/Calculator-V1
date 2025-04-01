@@ -24,7 +24,7 @@ if you download source extract folder
 
 cd address/Calculator-V1/ 
 
-just open main.py its autmatic download everything 
+just open main.py its automatic download everything 
 or
 pip install -r requirments.txt
 
